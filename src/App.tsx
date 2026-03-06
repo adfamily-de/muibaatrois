@@ -1,3 +1,14 @@
+import Gallery from "./components/Galeria/Gallery";
+
+function App() {
+  return (
+    <div className="App">
+      <Gallery />
+    </div>
+  );
+}
+
+export default App;
 import { useState, useEffect } from 'react'
 import { 
   Phone, 
