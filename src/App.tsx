@@ -1,4 +1,4 @@
-import Gallery from "./components/Galeria/Gallery";
+import Gallery from "./components/galeria/gallery";
 
 function App() {
   return (
