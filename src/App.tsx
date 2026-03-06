@@ -1,13 +1,5 @@
 import Gallery from "./components/Galeria/Gallery";
 
-function App() {
-  return (
-    <div className="App">
-      <Gallery />
-    </div>
-  );
-}
-
 import { useState, useEffect } from 'react'
 import { 
   Phone, 
@@ -994,4 +986,11 @@ function App() {
   )
 }
 
+App() {
+  return (
+    <div className="App">
+      <Gallery />
+    </div>
+  );
+}
 export default App
