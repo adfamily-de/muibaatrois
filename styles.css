@@ -1,20 +1,32 @@
 /* Cores relacionadas a restaurante e bar: tons quentes e elegantes */
 :root {
 body {
-  background-color: #ffffff; /* fundo branco clássico */
-  color: #222222; /* cor do texto padrão */
+  background-color: #003366; /* azul escuro para todo o site */
+  color: #ffffff; /* texto branco para contraste */
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
 }
 
 /* Cabeçalhos */
 h1, h2, h3 {
-  color: #003366; /* azul escuro */
+  color: #FF8C00; /* laranja suave para títulos */
 }
 
-/* Destaques ou botões */
+/* Links */
+a {
+  color: #FF8C00; /* laranja para links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Botões */
 .button {
-  background-color: #FF8C00; /* laranja queimado suave */
-  color: #ffffff; /* texto branco no botão */
+  background-color: #FF8C00; /* laranja queimado */
+  color: #ffffff; /* texto branco */
   padding: 10px 20px;
   border: none;
   border-radius: 4px;
@@ -22,15 +34,8 @@ h1, h2, h3 {
   transition: background-color 0.3s ease;
 }
 
-/* Efeito ao passar o mouse no botão */
 .button:hover {
   background-color: #FF7000; /* tom mais escuro do laranja */
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
