@@ -1,13 +1,128 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beleza Divina</title>
-    <script type="module" crossorigin src="./assets/index-gOlZ3_Jx.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-tPrb7xIw.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Muliba Restaurante</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  <h1 id="title">Muliba Restaurante</h1>
+  <p id="subtitle">Sabor, Elegância e Conforto em Moçambique</p>
+  <div class="language-switcher">
+    <button onclick="setLanguage('pt')">PT</button>
+    <button onclick="setLanguage('en')">EN</button>
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#sobre" id="nav-sobre">Sobre</a></li>
+    <li><a href="#servicos" id="nav-servicos">Serviços</a></li>
+    <li><a href="#programas" id="nav-programas">Programas & Receitas</a></li>
+    <li><a href="#reserva" id="nav-reserva">Reservas</a></li>
+    <li><a href="#contato" id="nav-contato">Contato</a></li>
+  </ul>
+</nav>
+
+<section id="sobre">
+  <h2 id="sobre-title">Sobre Nós</h2>
+  <p id="sobre-text" style="max-width:800px; margin:auto; text-align:center;">Localizado na Av. Patrice Lumumba, Matola Fomento, o Muliba Restaurante oferece uma experiência gastronômica única, com pratos tradicionais e uma atmosfera acolhedora. Venha nos visitar!</p>
+  <div style="text-align:center; margin-top:20px;">
+    <img src="fundo_sobre.jpg" alt="Imagem do restaurante" style="width:100%; max-width:800px; border-radius:8px;">
+  </div>
+</section>
+
+<section id="servicos">
+  <h2 id="servicos-title">Serviços</h2>
+  <div style="display:flex; flex-wrap:wrap; justify-content:center;">
+    <div class="card">
+      <h3 id="servico1">Almoço e Jantar</h3>
+      <p>Pratos deliciosos preparados com ingredientes frescos.</p>
+    </div>
+    <div class="card">
+      <h3 id="servico2">Eventos & Festas</h3>
+      <p>Organize seu evento conosco em um ambiente especial.</p>
+    </div>
+    <div class="card">
+      <h3 id="servico3">Bar & Drinks</h3>
+      <p>Seleção de bebidas e coquetéis exclusivos.</p>
+    </div>
+  </div>
+</section>
+
+<section id="programas">
+  <h2 id="programas-title">Programas & Receitas</h2>
+  <div style="max-width:800px; margin:auto; text-align:center;">
+    <p id="programas-text">Confira nossas receitas especiais e programas de culinária. Em breve, mais novidades!</p>
+    <div style="margin-top:20px;">
+      <img src="fundo_programas.jpg" alt="Programas" style="width:100%; max-width:800px; border-radius:8px;">
+    </div>
+  </div>
+</section>
+
+<section id="reserva">
+  <h2 id="reserva-title">Faça sua Reserva</h2>
+  <p style="text-align:center;" id="reserva-info">Preencha suas preferências abaixo e envie sua reserva pelo WhatsApp.</p>
+  <form id="formReserva">
+    <label for="nome" id="label-nome">Nome (Opcional)</label>
+    <input type="text" id="nome" placeholder="Seu nome (opcional)" />
+
+    <label for="pessoas" id="label-pessoas">Número de Pessoas</label>
+    <input type="number" id="pessoas" min="1" max="20" placeholder="Número de pessoas" required />
+
+    <label for="data" id="label-data">Data</label>
+    <input type="date" id="data" required />
+
+    <label for="hora" id="label-hora">Hora</label>
+    <input type="time" id="hora" required />
+
+    <label for="ambiente" id="label-ambiente">Ambiente Preferido</label>
+    <select id="ambiente" required>
+      <option value="">Selecione</option>
+      <option value="Lazer">Lazer</option>
+      <option value="Reunião de Negócios">Reunião de Negócios</option>
+      <option value="Família">Família</option>
+      <option value="Encontro Romântico">Encontro Romântico</option>
+      <option value="Outro">Outro</option>
+    </select>
+
+    <label for="ocasião" id="label-ocasiao">Ocasião</label>
+    <select id="ocasião" required>
+      <option value="">Selecione</option>
+      <option value="Aniversário">Aniversário</option>
+      <option value="Reunião">Reunião</option>
+      <option value="Casamento">Casamento</option>
+      <option value="Outro">Outro</option>
+    </select>
+
+    <label for="alergias" id="label-alergias">Alergias ou Restrições</label>
+    <textarea id="alergias" rows="3" placeholder="Informe alergias ou restrições"></textarea>
+
+    <button type="submit" id="btn-enviar">Enviar Reserva</button>
+  </form>
+</section>
+
+<section id="contato">
+  <h2 id="contato-title">Contato</h2>
+  <p style="text-align:center;">
+    Localização: Moçambique, Matola Fomento, Av. Patrice Lumumba<br/>
+    Telefone: +258 870200011<br/>
+    Email: <a href="mailto:mulibarestaurante@gmail.com">mulibarestaurante@gmail.com</a><br/>
+    WhatsApp: <a href="https://wa.me/258827681970" target="_blank">+258 827681970</a>
+  </p>
+  <div class="social-buttons" style="text-align:center;">
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook">🌐</a>
+    <a href="https://instagram.com" target="_blank" aria-label="Instagram">📸</a>
+    <a href="https://twitter.com" target="_blank" aria-label="Twitter">🐦</a>
+  </div>
+</section>
+
+<footer>
+  <p id="footer-text">&copy; 2024 Muliba Restaurante. Todos os direitos reservados.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+                                    </html>
