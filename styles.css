@@ -1,9 +1,30 @@
 /* Cores relacionadas a restaurante e bar: tons quentes e elegantes */
 :root {
 body {
-  background-color: #ffffff; /* branco clássico */
-  color: #222222; /* cinza bem escuro para leitura confortável */
-  font-family: Arial, sans-serif
+  background-color: #ffffff; /* fundo branco clássico */
+  color: #222222; /* cor do texto padrão */
+  font-family: Arial, sans-serif;
+}
+
+/* Cabeçalhos */
+h1, h2, h3 {
+  color: #003366; /* azul escuro */
+}
+
+/* Destaques ou botões */
+.button {
+  background-color: #FF8C00; /* laranja queimado suave */
+  color: #ffffff; /* texto branco no botão */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse no botão */
+.button:hover {
+  background-color: #FF7000; /* tom mais escuro do laranja */
 }
 
 * {
