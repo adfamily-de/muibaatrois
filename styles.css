@@ -1,9 +1,9 @@
 /* Cores relacionadas a restaurante e bar: tons quentes e elegantes */
 :root {
 body {
-  background-color: #000000; /* preto */
-  color: #FFD700; /* dourado */
-  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* branco clássico */
+  color: #222222; /* cinza bem escuro para leitura confortável */
+  font-family: Arial, sans-serif
 }
 
 * {
